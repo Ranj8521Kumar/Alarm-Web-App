@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alarm-App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <video
+      src="snow_in_wind3.mp4"
+      id="background-video"
+      autoplay
+      muted
+      loop
+    ></video>
+
+    <div class="countdown-container">
+      <h1>Set a Alarm</h1>
+      <div class="input-container">
+        <input
+          type="text"
+          placeholder="Enter Time    :    1 jan 2024 00:00:00"
+          id="input-value"
+        />
+        <button class="submit-button" type="submit" onclick="getValue()">
+          Submit
+        </button>
+      </div>
+      <div class="container"></div>
+      <audio class="alarm"></audio>
+      <div class="stop-container">
+        
+      </div>
+    </div>
+
+    <script src="countDown.js"></script>
+  </body>
+</html>
